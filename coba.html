@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static {
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 125px;
+        background: #0cf;
+        margin: 10px;
+        /*POSITION:STATIC tidak perlu dibuat, karena secara defaultnya sudah static*/
+      }
+
+      .absolute {
+        position: absolute;
+        width: 100px;
+        height: 125px;
+        background: #f00;
+      }
+
+      .relative2 {
+        /*lebar dan tinggi bebas aja, tapi dibuat agak besar */
+        width: 500px;
+        height: 300px;
+        background: #ccc;
+      }
+      .absolute2 {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background: #000;
+        right: 100px;
+      }
+
+      .fixed {
+        position: fixed;
+        width: 500px;
+        height: 100px;
+        background: #ffcc00;
+        top: 50px; /*50px dari atas browser*/
+        left: 200px; /*200px dari kiri browser*/
+      }
+      .inline {
+        display: inline;
+        background: #cf0;
+        margin: 20px;
+        padding: 10px;
+      }
+
+      .block {
+        display: block;
+        background: #0cf;
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+      }
+
+      .inlineBlock {
+        display: inline-block;
+        background: #0cf;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .flex {
+        display: flex;
+        background: #cf7;
+        padding: 10px;
+        justify-content: center;
+      }
+
+      .isi {
+        width: 150px;
+        height: 150px;
+        background: rgba(0, 0, 0, .25);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Static</h1>
+    <br />
+    <div class="static">block</div>
+    <div class="static">block</div>
+    <div class="static">block</div>
+
+    <br />
+    <br />
+
+    <span class="static">inline</span>
+    <span class="static">inline</span>
+    <span class="static">inline</span>
+
+    <br />
+    <br />
+
+    <h2>Display Absolute</h2>
+    <div class="absolute">block</div>
+    <br />
+    <div class="absolute">block</div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Display Absolute didalam Relative</h2>
+    <div class="relative2">
+      <div class="absolute2"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h2>Display Fixed</h2>
+    <div class="fixed"></div>
+
+    Teks sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,,
+
+    <span class="inline">Ini adalah layer dengan display:inline. </span>
+    <span class="inline">Ini adalah layer dengan display:inline. </span>
+    <span class="inline">Ini adalah layer dengan display:inline. </span>
+
+    Teks sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,,
+
+    <br />
+    <br />
+    <div class="block">Ini adalah layer dengan display:block;</div>
+    <div class="block">Ini adalah layer dengan display:block;</div>
+    <div class="block">Ini adalah layer dengan display:block;</div>
+
+    <br />
+    <br />
+
+    Teks sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,,
+    <span class="inlineBlock">Ini adalah layer dengan display:inline. </span>
+    <span class="inlineBlock">Ini adalah layer dengan display:inline. </span>
+    <span class="inlineBlock">Ini adalah layer dengan display:inline. </span>
+    Teks sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,, Teks
+    sembarangan saja,, Teks sembarangan saja,, Teks sembarangan saja,,
+
+    <br />
+    <br />
+
+    <div class="flex">
+      <div class="isi"></div>
+      <div class="isi"></div>
+      <div class="isi"></div>
+    </div>
+  </body>
+</html>
