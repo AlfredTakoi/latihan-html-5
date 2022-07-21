@@ -77,13 +77,63 @@
       .isi {
         width: 150px;
         height: 150px;
-        background: rgba(0, 0, 0, .25);
+        background: rgba(0, 0, 0, 0.25);
         margin: 10px;
+      }
+
+      .fb::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #757575;
+      }
+      .fb::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #757575;
+      }
+
+      body {
+        background: #35a9db;
+        font-family: roboto;
+        text-align: center;
+      }
+
+      h1,
+      h2 {
+        color: #fff;
+      }
+
+      .ketengah {
+        margin: 10px auto;
+        width: 1150px;
+      }
+
+      .kotak1 {
+        background: #fcfcfc;
+        padding: 20px;
+        float: left;
+        margin: 50px;
+        width: 150px;
+        height: 150px;
+      }
+
+      .kotak2 {
+        background: #fcfcfc;
+        padding: 20px;
+        float: left;
+        margin: 50px;
+        width: 150px;
+        height: 150px;
+        -ms-transform: matrix(1, 2, -1, 1, 5, 4); /* Support IE 9 */
+        -webkit-transform: matrix(1, 2, -1, 1, 5, 4); /* support Safari */
+        transform: matrix(1, 2, -1, 1, 5, 4); /* Standard syntax */
       }
     </style>
   </head>
   <body>
-    <h1>Display Static</h1>
+    <!-- <h1>Display Static</h1>
     <br />
     <div class="static">block</div>
     <div class="static">block</div>
@@ -164,6 +214,19 @@
       <div class="isi"></div>
       <div class="isi"></div>
       <div class="isi"></div>
+    </div>
+
+    <div>
+      <a class="fb" href="#">Test</a>
+    </div> -->
+
+    <h1>Tutorial CSS Transform | www.malasngoding.com</h1>
+    <h2>scew()</h2>
+    <div class="kotak1">
+      Ini adalah kotak 1. kotak ini tidak di berikan method skew
+    </div>
+    <div class="kotak2">
+      Ini adalah kotak 2. ini contoh fungsi skew() CSS Transform. skew().
     </div>
   </body>
 </html>

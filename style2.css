@@ -52,6 +52,11 @@ nav .brand {
   list-style-type: none;
   margin: 15px;
 }
+.nav-link ul li:hover {
+  background-color: #f4f4f9;
+  height: 50px;
+  width: 50px;
+}
 
 .nav-link ul li a {
   color: white;
@@ -70,6 +75,7 @@ header img {
   height: 300px;
   object-fit: cover;
   opacity: 0.5;
+  
 }
 
 header h2 {
@@ -157,6 +163,11 @@ section .article img {
   border-radius: 5px;
 }
 
+.form-control:focus {
+  box-shadow: 1px 1px 5px #636799;
+  transition: .5s;
+}
+
 .btn-secondary {
   outline: none;
   border: none;
@@ -167,6 +178,11 @@ section .article img {
   background-color: #2f3470;
   transition: all 0.2s ease;
   color: white;
+}
+
+.btn-secondary:active{
+  transform: scale(0.9);
+  box-shadow: 0 5px 10px #636799;
 }
 
 .btn-secondary:hover {
