@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Laca";
+  src: local("font"), local("font"),
+    url("/font/Laca-Regular.woff2") format("woff2"),
+    url("/font/Laca-Regular.woff") format("woff"),
+    url("/font/Laca-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global class */
+.container {
+  width: 70%;
+  height: 50px;
+  margin-inline: auto;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 13px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.btn-primary {
+  background-color: #7eae4b;
+  color: white;
+}
+
+.btn-secondary {
+    background-color: #f0a742;
+    color: white;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(./img/tree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation .box-navigation {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .box-navigation .box ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation .box-navigation .box ul li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.navigation .box-navigation .box ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 17px 0px;
+}
+
+.navigation .box-navigation .box ul li a:hover {
+  border-bottom: 5px solid yellowgreen;
+}
+
+/* Hero Style */
+header .hero {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+header .hero h1 {
+  font-size: 80px;
+  letter-spacing: 9px;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Laca";
+}
+
+header .hero .culture:before,
+header .hero .culture::after {
+  content: "\2022";
+  margin: 0px 5px;
+}
+
+header .hero p {
+  margin-top: 90px;
+  font-size: 35px;
+  align-items: center;
+}
+
+.pagination {
+  margin-top: 40px;
+}
+
+.pagination .dot {
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pagination .active {
+  height: 27px;
+  width: 27px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* about section */
+.about {
+  width: 100%;
+  height: 90vh;
+  background-image: url(./img/guillermo-varela-NwoSLwaqNIo-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px 0px;
+}
+
+.about .about-title {
+  padding: 20px 0px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.about .about-title .line-border {
+  height: 5px;
+  width: 164px;
+  background-color: yellow;
+  margin-bottom: 15px;
+}
+
+.about .about-title h1,
+p {
+  letter-spacing: 2px;
+}
+
+.about .about-body {
+  display: flex;
+  margin-top: 40px;
+}
+
+.about .about-body .card {
+  width: 600px;
+  height: 300px;
+  background-color: #fee775;
+  margin-right: 20px;
+  padding: 25px;
+  border-top: 8px solid #2b1c2b;
+  border-bottom: 8px solid white;
+  color: #2b1c25;
+}
+
+.about .about-body .card h3 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  max-width: 90%;
+}
+
+.about .about-body .card p {
+  color: #9a8a50;
+}
+
+.about .about-body .img-people {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.about .about-body .img-rounded {
+  width: 90px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.about .about-body .img-people span {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-img .dot {
+  height: 10px;
+  width: 15px;
+  margin: 4px;
+  background-color: #7eae4b;
+  border-radius: 50%;
+  display: inline-block;
+}
+.pagination-img .no-active {
+  height: 12px;
+  width: 12px;
+}
+
+.pagination-img .active {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #7eae4b;
+  border-radius: 50%;
+}
+
+/* Products Section */
+.products {
+    width: 100%;
+    height: 90vh;
+    padding: 70px 0px;
+    background-image: url('./img/lise-timmer-SBseoVEuwtg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.products .product-body {
+   width: 100%;
+   height: 450px;
+   background-color: #389cb4;
+   display: flex;
+   justify-content: space-between;
+}
+
+.products .product-body .product-title {
+    width: 100%;
+    padding: 40px;
+    color: white;
+}
+
+.products .product-body .product-title h1 {
+    font-size: 40px;
+}
+
+.products .product-body .product-title p {
+    font-size: 13px;
+}
+
+.products .product-body .product-title .line-border {
+    height: 5px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.products .product-body .img-product {
+    width: 100%;
+}
+
+.products .product-body .img-product img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+

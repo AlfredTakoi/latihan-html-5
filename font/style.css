@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Laca';
+    src: local('Laca Regular'), local('Laca-Regular'),
+        url('Laca-Regular.woff2') format('woff2'),
+        url('Laca-Regular.woff') format('woff'),
+        url('Laca-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
