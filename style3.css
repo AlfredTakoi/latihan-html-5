@@ -24,13 +24,13 @@
 }
 
 .btn {
-    width: 150px;
-    height: 40px;
-    outline: none;
-    border: none;
-    border-radius: 13px;
-    font-weight: bold;
-    font-size: 10px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .btn-primary {
@@ -39,8 +39,34 @@
 }
 
 .btn-secondary {
-    background-color: #f0a742;
-    color: white;
+  background-color: #f0a742;
+  color: white;
+}
+
+.line {
+  height: 5px;
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+.line-primary {
+  background-color: yellow;
+}
+
+.line-secondary {
+  background-color: white;
+}
+
+.line-third {
+  background-color: #fda041;
+}
+
+.float-right {
+  float: right;
+}
+
+.d-flex {
+  display: flex;
 }
 
 /* Header */
@@ -138,7 +164,7 @@ header .hero p {
 /* about section */
 .about {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-image: url(./img/guillermo-varela-NwoSLwaqNIo-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,16 +173,9 @@ header .hero p {
 }
 
 .about .about-title {
-  padding: 20px 0px;
+  padding: 8px 0px;
   line-height: 30px;
   margin-top: 20px;
-}
-
-.about .about-title .line-border {
-  height: 5px;
-  width: 164px;
-  background-color: yellow;
-  margin-bottom: 15px;
 }
 
 .about .about-title h1,
@@ -166,7 +185,7 @@ p {
 
 .about .about-body {
   display: flex;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .about .about-body .card {
@@ -245,51 +264,259 @@ p {
 
 /* Products Section */
 .products {
-    width: 100%;
-    height: 90vh;
-    padding: 70px 0px;
-    background-image: url('./img/lise-timmer-SBseoVEuwtg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  padding: 70px 0px;
+  position: relative;
+}
+
+.products::before {
+  content: "";
+  background-image: url("./img/lise-timmer-SBseoVEuwtg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 
 .products .product-body {
-   width: 100%;
-   height: 450px;
-   background-color: #389cb4;
-   display: flex;
-   justify-content: space-between;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .products .product-body .product-title {
-    width: 100%;
-    padding: 40px;
-    color: white;
+  width: 100%;
+  padding: 40px;
+  color: white;
+  background-color: #389cb4;
 }
 
 .products .product-body .product-title h1 {
-    font-size: 40px;
+  font-size: 38px;
 }
 
 .products .product-body .product-title p {
-    font-size: 13px;
-}
-
-.products .product-body .product-title .line-border {
-    height: 5px;
-    width: 150px;
-    background-color: white;
-    margin-bottom: 20px;
+  font-size: 11px;
 }
 
 .products .product-body .img-product {
-    width: 100%;
+  width: 100%;
+  position: relative;
+  background-color: black;
 }
 
-.products .product-body .img-product img{
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+.products .product-body .img-product img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  outline: 1.5px solid white;
+  outline-offset: -12px;
+  display: block;
 }
+figcaption {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  background-color: #389cb4;
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  opacity: 0.5;
+}
+
+/* Technologies Section */
+.technologies {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(./img/field-4379634.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0px;
+}
+
+.technologies .technologies-title {
+  color: white;
+  padding: 8px 0px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.technologies .technologies-title h1 {
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
+.technologies .technologies-body {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.technologies .technologies-body .card {
+  width: 95%;
+  height: 150px;
+  margin: 10px 0px;
+  display: flex;
+  position: relative;
+}
+.technologies .technologies-body .card::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.technologies .technologies-body .card img {
+  width: 35%;
+  height: 150px;
+  object-fit: cover;
+  outline: 1.5px solid white;
+  outline-offset: -8px;
+  position: relative;
+}
+
+.technologies .technologies-body .card .card-body {
+  padding: 15px;
+  position: relative;
+}
+
+.technologies .technologies-body .card .card-body h3 {
+  color: white;
+  font-size: 17px;
+}
+
+.technologies .technologies-body .card .card-body p {
+  color: white;
+  font-size: 11px;
+}
+
+.technologies .technologies-body .card .card-body span {
+  color: rgb(206, 134, 27);
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.testimonials::before {
+  content: "";
+  background-image: linear-gradient(
+      rgba(240, 118, 18, 0.884),
+      rgba(216, 113, 16, 0.7)
+    ),
+    url("./img/gabriel-lamza-yJr1rbbrAGw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.testimonials .testimonials-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 50px 0px;
+}
+
+.testimonials .testimonials-body .img-people {
+  position: relative;
+}
+
+.testimonials .testimonials-body .img-people span {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonials .testimonials-body .img-rounded {
+  width: 90px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.testimonials .testimonials-body p {
+  font-weight: 500;
+}
+
+.testimonials .testimonials-body span i {
+  font-size: 30px;
+  color: white;
+}
+
+.testimonials .testimonials-body .height-1 {
+  height: 2px;
+  margin-top: 10px;
+}
+
+/* Section Contacts */
+.contacts {
+  width: 100%;
+  height: 100vh;
+  background-color: #30262e;
+  padding: 90px 0px;
+}
+
+.contacts .content-contact {
+  width: 70%;
+}
+
+.contacts .contacts-title h1{
+  font-size: 40px;
+  color: white;
+}
+
+.contacts .contacts-title p{
+  color: #746d70;
+}
+
+.contacts .contacts-body .form-contacts {
+  margin-top: 40px;
+}
+
+.contacts .contacts-body .form-contacts .form-group {
+  margin: 20px 0px;
+}
+
+.contacts .contacts-body .form-contacts .form-group .form-control{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #6e666e;
+  padding: 10px;
+  color: white;
+}
+
 

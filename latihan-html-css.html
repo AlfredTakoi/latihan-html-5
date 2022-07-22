@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -54,7 +58,7 @@
     <section class="about">
       <div class="container">
         <div class="about-title">
-          <div class="line-border"></div>
+          <div class="line line-primary"></div>
           <h1>OUR COMPANY AT A GLANCE</h1>
           <p>a new generation of farming</p>
         </div>
@@ -116,7 +120,7 @@
     <section class="products">
       <div class="product-body">
         <div class="product-title">
-          <div class="line-border"></div>
+          <div class="line line-secondary"></div>
           <h1>OUR PRODUCTS</h1>
           <br />
           <p>
@@ -133,14 +137,161 @@
           <br />
           <button class="btn btn-secondary">SEE ALL PRODUCTS</button>
         </div>
-        <div class="img-product">
+        <figure class="img-product">
           <img src="./img/glasess.jpeg" alt="" width="100" />
-        </div>
-        <div class="img-product">
+          <figcaption>Glasess</figcaption>
+        </figure>
+        <figure class="img-product">
           <img src="./img/watch.jpg" alt="" width="100" />
+          <figcaption>Watch</figcaption>
+        </figure>
+        <figure class="img-product">
+          <img src="./img/bag.jpeg" alt="" width="100" />
+          <figcaption>Bag</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Section Technologies -->
+    <section class="technologies">
+      <div class="container">
+        <div class="technologies-title">
+          <div class="line line-third"></div>
+          <h1>NEW TECHNOLOGIES</h1>
+          <p>eget tellus non erat</p>
         </div>
-        <div class="img-product">
-          <img src="./img/handphone.jpeg" alt="" width="100" />
+
+        <div class="technologies-body">
+          <div class="card">
+            <img src="./img/apel.jpeg" alt="" />
+            <div class="card-body">
+              <h3>Nulla facilisi</h3>
+              <br />
+              <span>nonummy hendrerit mauris</span><br /><br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                molestiae et natus cupiditate aut nihil?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/apel.jpeg" alt="" />
+            <div class="card-body">
+              <h3>Nulla facilisi</h3>
+              <br />
+              <span>nonummy hendrerit mauris</span><br /><br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                molestiae et natus cupiditate aut nihil?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/apel.jpeg" alt="" />
+            <div class="card-body">
+              <h3>Nulla facilisi</h3>
+              <br />
+              <span>nonummy hendrerit mauris</span><br /><br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                molestiae et natus cupiditate aut nihil?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/apel.jpeg" alt="" />
+            <div class="card-body">
+              <h3>Nulla facilisi</h3>
+              <br />
+              <span>nonummy hendrerit mauris</span><br /><br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                molestiae et natus cupiditate aut nihil?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-body">
+          <div class="img-people">
+            <span>
+              <img
+                src="./img/people1.jpeg"
+                class="img-rounded"
+                alt=""
+                width="50"
+              />
+            </span>
+          </div>
+          <br />
+          <span><i class="fa-solid fa-quote-left"></i></span><br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            repudiandae explicabo similique vero magni, dolores quam deleniti
+            voluptatum alias eius repellendus pariatur praesentium consequatur,
+            est totam consequuntur beatae in quisquam nobis autem incidunt!
+            Possimus, fuga?
+          </p>
+          <br /><br />
+          <span class="line line-secondary height-1"></span>
+          <h3>Tom James</h3>
+          <div class="pagination">
+            <span class="active">
+              <span class="dot"></span>
+            </span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contacts -->
+    <section class="contacts">
+      <div class="container d-flex">
+        <div class="content-contact">
+          <div class="contacts-title">
+            <div class="line line-third"></div>
+            <h1>CONTACT INFO</h1>
+            <p>eget tellus non erat</p>
+          </div>
+          <div class="contacts-body">
+            <form action="" class="form-contacts">
+              <div class="form-group">
+                <input type="text" placeholder="Name" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <input type="text" placeholder="E-mail" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button class="btn btn-secondary float-right">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
