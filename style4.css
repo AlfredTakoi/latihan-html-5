@@ -28,7 +28,7 @@
 
 .btn-primary {
   width: 150px;
-  height: 45px;
+  height: 45px; 
   outline: none;
   border: none;
   background-color: #f75e59;
@@ -220,7 +220,7 @@ header .hero .hero-content p {
   object-fit: cover;
   transform: scale(1);
   display: block;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .stories .stories-content .box-wrapp-1 .image-box:hover img, .stories .stories-content .box-wrapp-2 .image-box:hover img {
   transform: scale(1.2);
