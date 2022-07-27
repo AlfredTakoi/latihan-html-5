@@ -331,11 +331,11 @@ header .hero-content .box-3 .description {
   border: 1px solid black;
   margin-left: 10px;
   border-radius: 50%;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   top: 30%;
+}
+
+.products .products-title .carousel-control i {
+  margin: auto;
 }
 
 .products-body {
@@ -420,12 +420,14 @@ header .hero-content .box-3 .description {
   border-radius: 50%;
   border: 1px solid black;
   margin-right: 5px;
-  justify-content: center;
-  align-items: center;
   transition: all .2s ease-in-out;
 }
 .footer .footer-content .footer-box:nth-child(4) div span:hover {
   background-color: black;
   color: #f1f0ee;
   cursor: pointer;
+}
+
+.footer .footer-content .footer-box:nth-child(4) div span i {
+  margin: auto;
 }
