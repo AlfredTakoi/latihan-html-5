@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +38,29 @@ header {
 .btn-secondary {
   border: 1px solid #a9a9a7;
   color: #a9a9a7;
+}
+
+.btn-third {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  outline: none;
+  margin-top: 20px;
+  border: 1px solid #a9a9a7;
+  color: #a9a9a7;
+  margin-left: 20px;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.form-control {
+  padding: 5px 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 /* Header */
@@ -99,6 +124,7 @@ header .hero {
   position: relative;
   padding: 50px 0px;
   height: 80vh;
+  border-right: 1px solid white;
 }
 
 header .hero-content {
@@ -110,6 +136,7 @@ header .hero-content .box-1 {
   height: 450px;
   z-index: 1;
   font-size: 100px;
+  font-family: "Colibre Bristole", serif;
 }
 
 header .hero-content .box-2 {
@@ -191,6 +218,10 @@ header .hero-content .box-3 .description {
   position: absolute;
   left: 35%;
 }
+.about .about-content .box-2 .heading {
+  font-family: "Great Vibes", cursive;
+}
+
 .about .about-content .box-2 h1 {
   font-size: 50px;
   margin-bottom: 30px;
@@ -225,9 +256,12 @@ header .hero-content .box-3 .description {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 0px;
   backdrop-filter: blur(5px);
-  position: absolute;
+}
+
+.collection .collection-content {
+  padding: 60px 0px;
+  justify-content: center;
 }
 
 .collection .collection-content .box-wrapper {
@@ -266,8 +300,132 @@ header .hero-content .box-3 .description {
 .collection .collection-content .box-wrapper .box-text .text-large {
   font-size: 50px;
   margin: 50px 0px;
+  font-family: "Great Vibes", cursive;
 }
 
 .collection .collection-content .box-wrapper .box-text button {
-    margin: 20px 0px;
+  margin: 20px 0px;
+}
+
+/* Section Products */
+.products {
+  width: 100%;
+  height: 160vh;
+  background-color: #f1f0ee;
+  padding: 70px 0px;
+}
+
+.products .products-title {
+  justify-content: space-between;
+}
+
+.products .products-title h1 {
+  font-size: 100px;
+  width: 50%;
+}
+
+.products .products-title .carousel-control .previous,
+.products .products-title .carousel-control .next {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-left: 10px;
+  border-radius: 50%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: 30%;
+}
+
+.products-body {
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+}
+
+.products .products-body .image-box {
+  width: 1500px;
+  height: 550px;
+  margin: 20px 0px;
+  justify-content: end;
+  position: relative;
+  left: 5%;
+}
+
+.products .products-body .image-item {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.products .products-body .image-item img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.products .products-body .image-item:nth-child(odd) {
+  position: relative;
+  top: 25%;
+}
+.products .products-body .image-item:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+.products .products-body .image-item:nth-child(2) .box-title {
+  width: 281.5px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #f1f0ee;
+}
+
+.footer .footer-content {
+  width: 100%;
+  padding: 60px 0px;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.footer .footer-content .footer-box:nth-child(4) {
+  width: 25%;
+}
+
+.footer .footer-content .footer-box:nth-child(4) .form-control {
+  padding: 5px 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.footer .footer-content .footer-box:nth-child(4) div span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+.footer .footer-content .footer-box:nth-child(4) div span:hover {
+  background-color: black;
+  color: #f1f0ee;
+  cursor: pointer;
 }
