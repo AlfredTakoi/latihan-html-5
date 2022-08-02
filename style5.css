@@ -84,7 +84,7 @@ header .navigation ul {
 }
 
 header .navigation ul li {
-  display: inline-block;
+  display: inline-block;  
   margin: 10px 70px;
 }
 header .navigation ul li a {
